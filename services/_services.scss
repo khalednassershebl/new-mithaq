@@ -1,0 +1,389 @@
+.services-page {
+    padding: 75px 0;
+}
+.services-container {
+    .service-card {
+        position: relative;
+        background: {
+            size: cover;
+            position: center center;
+            repeat: no-repeat;
+        }
+        height: 350px;
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 12px;
+    }
+    .service-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: inset 0 -120px 50px -40px #03031bbf;
+    }
+    .service-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h3 {
+            color: #FFF;
+            font-size: 1.8rem;
+            font-weight: 500;
+            flex: 11;
+        }
+        p {
+            color: #FFF;
+            font-size: 0.9rem;
+            font-weight: 400;
+            display: none;
+        }
+        svg {
+            fill: #FFF;
+            height: 24px;
+            width: 24px;
+            flex: 1;
+        }
+    }
+}
+
+.one-service-container {
+    .about-service {
+        background: #FAF9F7;
+        padding: 75px 0;
+        span {
+            color: $secondColor;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 2.3rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+            color: $mainColor;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            font-weight: 500;
+            color: $mainColor;
+        }
+    }
+    .advan-service {
+        padding: 75px 0;
+        .advan-line {
+            position: relative;
+            figure {
+                background: {
+                    size: cover;
+                    position: center center;
+                    repeat: no-repeat;
+                }
+                height: 650px;
+                width: 87%;
+                border-radius: 12px;
+                @media (max-width: $max-9) {
+                    width: 100%;
+                }
+            }
+            .line-box {
+                position: absolute;
+                bottom: 25px;
+                left: 0px;
+                background: #171717;
+                padding: 45px 45px;
+                font-size: 2.6rem;
+                font-weight: 600;
+                color: #FFF;
+                width: 350px;
+                border-radius: 12px;
+                @media (max-width: $max-9) {
+                   display: none;
+                }
+            }
+        }
+        .advan-line-info {
+            padding-right: 100px;
+            @media (max-width: $max-9) {
+                padding-right: 0;
+            }
+            span {
+                color: $secondColor;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            h3 {
+                font-size: 3.3rem;
+                margin-bottom: 25px;
+                font-weight: 700;
+                color: $mainColor;
+                @media (max-width: $max-5) {
+                    font-size: 2rem;
+                    margin-bottom: 10px;
+                }
+            }
+            p {
+                font-size: 1.1rem;
+                margin-bottom: 25px;
+                font-weight: 500;
+                color: $mainColor;
+                @media (max-width: $max-5) {
+                    font-size: 0.9rem;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .advn-line-indent {
+            margin-top: 25px;
+            @media (max-width: $max-5) {
+                margin-top: 10px;
+            }
+            .advan-line-part {
+                display: flex;
+                align-items: center;
+                padding: 15px 0;
+                border-top: 1px solid #dddddd;
+                &:first-child {
+                    border: unset;
+                }
+                span {
+                    color: #918D89;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    margin-left: 15px;
+                    font-family: "en";
+                    @media (max-width: $max-5) {
+                        font-size: 1.3rem;
+                    }
+                }
+                h3 {
+                    font-size: 1.5rem;
+                    margin-bottom: 0;
+                    font-weight: 700;
+                    color: $mainColor;
+                    @media (max-width: $max-5) {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        a {
+            background: #9b7d31;
+            padding: 5px 25px;
+            color: #FFF;
+            font-size: 1rem;
+            font-weight: 500;
+            height: 50px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            margin-left: 6px;
+            margin-top: 25px;
+        }
+    }
+    .serv-nums {
+        background: #FAF9F7;
+        padding: 75px 0;
+        .num-line {
+            text-align: center;
+            @media (max-width: $max-9) {
+                margin-bottom: 35px;
+            }
+            span {
+                color: $secondColor;
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+            h3 {
+                font-size: 4rem;
+                margin-bottom: 10px;
+                font-weight: 700;
+                color: $mainColor;
+            }
+        }
+    }
+    .fq {
+        padding: 75px 0;
+        .advan-line {
+            position: relative;
+            figure {
+                background: {
+                    size: cover;
+                    position: center center;
+                    repeat: no-repeat;
+                }
+                height: 650px;
+                width: 87%;
+                border-radius: 12px;
+                margin-right: auto;
+                @media (max-width: $max-9) {
+                    display: none;
+                 }
+            }
+            .line-boxs {
+                position: absolute;
+                bottom: 25px;
+                right: 15px;
+                display: flex;
+                align-items: center;
+                @media (max-width: $max-9) {
+                    display: none;
+                 }
+                .line-box {
+                    background: #171717;
+                    padding: 25px 35px;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: #FFF;
+                    width: 240px;
+                    border-radius: 12px;
+                    margin-left: 15px;
+                    span {
+                        font-size: 1rem;
+                        color: #FFF;
+                        margin-bottom: -1px;
+                        display: block;
+                    }
+                    h3 {
+                        font-size: 3.5rem;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-size: 1rem;
+                        margin-bottom: 0;
+                    }
+                }
+                .line-box-light {
+                    background: #FAF9F7 !important;
+                    span {
+                        color: $mainColor;
+                    }
+                    h3 {
+                        color: $mainColor;
+                    }
+                    p {
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+        .advan-line-info {
+            padding-right: 0;
+            @media (max-width: $max-5) {
+                padding-right: 0;
+            }
+            span {
+                color: $secondColor;
+                font-size: 1rem;
+                font-weight: 600;
+                @media (max-width: $max-9) {
+                    display: block;
+                    text-align: center;
+                }
+            }
+            h3 {
+                font-size: 3.3rem;
+                margin-bottom: 25px;
+                font-weight: 700;
+                color: $mainColor;
+                @media (max-width: $max-9) {
+                    font-size: 2rem;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+            }
+            p {
+                font-size: 1.1rem;
+                margin-bottom: 25px;
+                font-weight: 500;
+                color: $mainColor;
+
+            }
+        }
+        .fq-indent {
+            .faq-container {
+                background-color: #fff;
+                border-radius: 10px;
+              }
+              
+              .faq-item {
+                padding: 20px;
+                border-bottom: 1px solid #e0e0e0;
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &:last-child {
+                    border: unset;
+                }
+              }
+              
+              .faq-item:last-child {
+                border-bottom: none;
+              }
+              
+              .faq-question {
+                font-size: 18px;
+                font-weight: 700;
+                padding-bottom: 3px;
+                padding-top: 3px;
+              }
+              
+              .faq-answer {
+                font-size: 16px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-in-out;
+                text-align: right;
+                padding-left: 10px;
+                padding-right: 10px;
+                p {
+                    padding: 25px 15px;
+                    margin: 0;
+                }
+              }
+              
+              .faq-answer.active {
+                border-bottom: 1px solid #e0e0e0;
+                &:last-child {
+                    border: unset;
+                }
+              }
+              
+              .icon-container i {
+                font-size: 16px;
+                cursor: pointer;
+                transition: transform 0.3s ease-in-out;
+              }
+              
+              .icon-container i.active {
+                transform: rotate(90deg);
+              }
+        }
+        a {
+            background: #9b7d31;
+            padding: 5px 25px;
+            color: #FFF;
+            font-size: 1rem;
+            font-weight: 500;
+            height: 50px;
+            width: 225px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            margin-left: 6px;
+            margin-top: 25px;
+        }
+    }
+}

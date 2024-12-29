@@ -1,0 +1,244 @@
+.contacts-page {
+    padding: 0 0;
+    .contact-info-parent {   
+        .contact-info-content-inner {
+            border: 1px solid #d9e3e4;
+            margin-bottom: 50px;
+        }
+        .contact-info-container {
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media (max-width: $max-9) {
+                display: block;
+                text-align: center;
+            }
+            .side {
+                flex: 1;
+                @media (max-width: $max-9) {
+                    margin: 20px 0;
+                }
+                a {
+                    text-decoration: none;
+                    display: block;
+                }
+                .phone {
+                    font-size: 2.2rem;
+                    font-weight: 600;
+                    color: $mainColor;
+                }
+                .email {
+                    color: #000;
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                }
+                .address {
+                    font-weight: 400;
+                    font-size: 1.1rem;
+                    margin: 0;
+                }
+                .social-links {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .links {
+                        margin: 0 7px;
+                        background: #e4e7ec;
+                        padding: 12px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .contact {
+        position: relative;
+        .contacts-container{
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+        }
+        .contact-info {
+            h3 {
+                font-size: 4rem;
+                position: relative;
+                color: #08344e;
+                margin-bottom: 20px;
+                @media (max-width: $max-9) {
+                    font-size: 2.5rem !important;
+                }
+                svg {
+                    height: 84px;
+                    width: 295px;
+                    position: absolute;
+                    top: 99%;
+                    fill: #be0f5d;
+                    right: 0%;
+                    transform: translate(0%, 0);
+                    @media (max-width: $max-9) {
+                        right: unset;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                    }
+                }
+            }
+            p {
+                margin-top: 25px;
+                color: #838694;
+                width: 80%;
+                font-size: 1rem;
+                @media (max-width: $max-9) {
+                    margin: auto;
+                    text-align: center;
+                }
+            }
+            .contacts-line {
+                .contact-line {
+                    display: flex;
+                    align-items: center;
+                    svg {
+                        height: 40px;
+                        fill: $mainColor;
+                        margin-left: 10px;
+                        margin-bottom: 0;
+                    }
+                    .contact-line-part {
+                        margin: 20px 0;
+                        h6 {
+                            margin: 0;
+                            font-size: 1.2rem;
+                            display: block;
+                        }
+                        p {
+                            margin: 0;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .contact-form {
+            margin: auto;
+            margin-bottom: 0;
+            form {
+                background: #FFF;
+                padding: 0;
+                border-radius: 20px;
+                padding: 0 150px;
+                @media (max-width: $max-12) {
+                    padding: 0 50px;
+                }
+                @media (max-width: $max-9) {
+                    padding: 75px 100px;
+                }
+                @media (max-width: $max-7) {
+                    padding: 40px 100px;
+                }
+                @media (max-width: $max-5) {
+                    padding: 40px 50px;
+                }
+                span {
+                    color: $secondColor;
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+                h3 {
+                    font-size: 2.3rem;
+                    margin-bottom: 25px;
+                    font-weight: 700;
+                    color: #08344e;
+                }
+                .form-group {
+                    margin-bottom: 20px;
+                    .form-control {
+                        padding: 15px 5px 15px 15px;
+                        font-size: 17px;
+                        line-height: 22px;
+                        margin-right: auto;
+                        height: 55px;
+                        border: unset;
+                        border-bottom: 1px solid $mainColor;
+                        border-radius: unset;
+                        background: unset;
+                        font-family: "en";
+                        &::placeholder {
+                            color: #797979;
+                            font-family: "sf";
+                        }
+                    }
+                    textarea {
+                        min-height: 180px;
+                    }
+                }
+                a {
+                    border: unset;
+                    background: $secondColor;
+                    text-decoration: none;
+                    color: #FFF;
+                    padding: 8px 35px 8px 35px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    margin: 5px 0 15px 0;
+                    display: inline-block;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+    .contact-cards {
+        padding: 75px 0;
+        position: relative;
+        z-index: 5;
+        background: #FAF9F7;
+        .contact-card {
+            background: #FFF;
+            border-radius: 0;
+            padding: 35px 40px;
+            text-align: center;
+            @media (max-width: $max-9) {
+                margin-bottom: 12px;
+            }
+            .contact-card-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 60px;
+                width: 60px;
+                border-radius: 12px;
+                margin: 0px auto 22px auto;
+                svg {
+                    height: 42px;
+                    width: 42px;
+                    fill: $secondColor;
+                }
+            }
+            .contact-card-info {
+                h3 {
+                    font-size: 1.4rem;
+                    color: #42393c;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+                span {
+                    color: #7e868e;
+                    font-size: 0.9rem;
+                    display: block;
+                }
+                a {
+                    text-decoration: none;
+                    color: $mainColor;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    margin-top: 0px;
+                    display: block;
+                }
+            }
+        }
+    }
+    iframe {
+        margin-bottom: -7px;
+    }
+}

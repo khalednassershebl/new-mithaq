@@ -1,0 +1,186 @@
+
+
+.about-vision {
+    padding: 100px 0;
+    @media (max-width: $max-9) {
+        padding: 75px 0;
+    }
+    .vision-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        @media (max-width: $max-9) {
+            display: block;
+            text-align: center;
+        }
+        span {
+            color: $secondColor;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 3rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+            color: $mainColor;
+            @media (max-width: $max-9) {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            font-weight: 500;
+            color: $mainColor;
+            @media (max-width: $max-9) {
+                font-size: 0.9rem;
+            }
+        }
+        .vision-header-info {
+            flex: 1;
+            align-items: center;
+        }
+        .vision-text {
+            padding-right: 50px;
+            flex: 1;
+            @media (max-width: $max-9) {
+                padding: 0;
+            }
+        }
+    }
+    .vision-cards {
+        .vision-card {
+            padding: 50px 25px;
+            background: #FAF9F7;
+            text-align: center;
+            height: 375px;
+            @media (max-width: $max-5) {
+                height: 325px;
+            }
+            lord-icon {
+                height: 100px;
+                width: 100px;
+                @media (max-width: $max-5) {
+                    height: 75px;
+                    width: 75px;
+                }
+            }
+            @media (max-width: $max-9) {
+               margin-bottom: 15px;
+            }
+            h3 {
+                font-size: 2.5rem;
+                margin-bottom: 25px;
+                font-weight: 500;
+                color: #41383c;
+                @media (max-width: $max-5) {
+                    font-size: 2rem;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+.about-section {
+    figure {
+        background: {
+            size: cover;
+            position: center center;
+            repeat: no-repeat;
+        }
+        height: 550px;
+        width: 80%;
+        border-radius: 12px;
+        @media (max-width: $max-9) {
+            height: 550px;
+            width: 100%;
+            margin-bottom: 25px;
+        }
+    }
+}
+.team-section {
+    padding: 100px 0;
+    .team-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        @media (max-width: $max-9) {
+            display: block;
+            text-align: center;
+        }
+        span {
+            color: $secondColor;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 3rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+            color: $mainColor;
+            @media (max-width: $max-9) {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            font-weight: 500;
+            color: $mainColor;
+            @media (max-width: $max-9) {
+                font-size: 0.9rem;
+            }
+        }
+        .team-header-info {
+            flex: 1;
+            align-items: center;
+        }
+        .team-text {
+            padding-right: 50px;
+            flex: 1;
+            @media (max-width: $max-9) {
+                padding: 0;
+            }
+        }
+    }
+    .col-lg-4, .col-md-6 {
+        display: flex;
+        justify-content: center;
+    }
+    .team-card {
+        position: relative;
+        margin-bottom: 50px;
+        figure {
+            margin: 0;
+            height: 425px;
+            width: 300px;
+            border-radius: 12px;
+            background: {
+                size: cover;
+                position: center center;
+                repeat: no-repeat;
+            }
+        }
+        .team-card-info {
+            background: #FAF9F7;
+            position: absolute;
+            bottom: -30px;
+            right: 100px;
+            padding: 30px 35px;
+            width: 260px;
+            border-radius: 12px;
+            h3 {
+                font-size: 1.75rem;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+            span {
+                color: $secondColor;
+                font-weight: 600;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
