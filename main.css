@@ -3095,31 +3095,29 @@ a:hover {
 .about .row {
   padding: 50px 0;
 }
+@media (max-width: 991.98px) {
+  .about .row {
+    padding: 0;
+  }
+}
 .about .section-header-side .pretitle {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
   position: relative;
   margin-bottom: 5px;
   color: #9b7d31;
   display: inline-block;
 }
-.about .section-header-side .pretitle::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 5px;
-  width: 100%;
-  background-color: transparent;
-  border: 3px solid rgba(0, 0, 0, 0.1);
-  -o-border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, rgba(0, 0, 0, 0.1) 1px, rgba(0, 0, 0, 0.1) 3px) 3;
-     border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, rgba(0, 0, 0, 0.1) 1px, rgba(0, 0, 0, 0.1) 3px) 3;
-  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
-}
 .about .section-header-side .heading {
   font-size: 2.9rem;
   font-weight: 700;
   color: #1f2438;
+}
+@media (max-width: 991.98px) {
+  .about .section-header-side .heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
 }
 .about .section-header-side .heading span {
   font-family: "num";
@@ -3131,6 +3129,11 @@ a:hover {
   font-weight: 500;
   color: #515151;
   margin-top: 15px;
+}
+@media (max-width: 991.98px) {
+  .about .section-header-side .text {
+    font-size: 0.9rem;
+  }
 }
 .about .section-header-side .action a {
   text-decoration: none;
@@ -3157,6 +3160,11 @@ a:hover {
 .about .about-line .about-line-image {
   margin-left: 100px;
   border-radius: 12px;
+}
+@media (max-width: 991.98px) {
+  .about .about-line .about-line-image {
+    display: none;
+  }
 }
 .about .about-line .about-line-image figure {
   height: 650px;
@@ -3211,6 +3219,11 @@ a:hover {
   margin-right: 100px;
   padding-top: 40px;
 }
+@media (max-width: 991.98px) {
+  .about .about-line .vision {
+    margin-right: 0;
+  }
+}
 .about .about-line .vision .vision-card {
   display: flex;
   align-items: center;
@@ -3234,6 +3247,11 @@ a:hover {
 .about .about-line .action {
   padding-right: 100px;
   margin-top: 30px;
+}
+@media (max-width: 991.98px) {
+  .about .about-line .action {
+    padding-right: 0;
+  }
 }
 .about .about-line .action a {
   height: 43px;

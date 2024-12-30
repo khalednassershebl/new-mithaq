@@ -72,4 +72,4 @@ wind.on("scroll", function () {
     navbar.removeClass("fixed-header");
   }
 });
-// new WOW().init();
+new WOW().init();
